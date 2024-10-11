@@ -218,8 +218,9 @@ MonoBehaviour:
   jumpHeight: 2
   gravityMultiplier: 1.5
   jumpHorizontalSpeed: 5
-  jumpButtonGracePeriod: 0.1
+  jumpButtonGracePeriod: 0.2
   cameraTransform: {fileID: 963194228}
+  ySpeed: 0
 --- !u!143 &115500197
 CharacterController:
   m_ObjectHideFlags: 0
