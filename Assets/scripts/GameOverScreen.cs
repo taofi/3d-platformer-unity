@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,15 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
-    public Text pointsText;
-    public void Setup(string timer) 
+    public void Setup()
     {
         gameObject.SetActive(true);
-        pointsText.text = timer;
     }
-
     public void RestartButton()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene("Game");
     }
 }

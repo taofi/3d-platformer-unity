@@ -8,7 +8,7 @@ public class StartScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerStats>().StartTimer();
+            other.GetComponent<Timer>().StartTimer();
         }
     }
 }
